@@ -100,7 +100,7 @@ jobs:
           USERNAME_PASSWORD: ${{ secrets.NEXUS_USERNAME_PASSWORD }}
         run: |
           set -euo pipefail
-          curl -s -u "${USERNAME_PASSWORD}" --fail --upload-file ./ActionsCheck-0.1.0.tgz "http://8081-cs-302088160845-default.cs-asia-southeast1-seal.cloudshell.dev/repository/helmtest/"
+          curl -s -u "${USERNAME_PASSWORD}" --fail --upload-file siji-test-stagecraft-2-micro-service-2-chart-0.1.0.tgz "http://8081-cs-302088160845-default.cs-asia-southeast1-seal.cloudshell.dev/repository/helmtest/"
 
       - name: Add Helm repository
         env:

@@ -1,0 +1,14 @@
+image:
+  repository: registry.ustpace.com/docker-sandbox/siji-test-stagecraft-2-micro-service-2
+  tag: latest
+  pullPolicy: Always
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx-internal
+  hosts:
+  - host: siji-test-stagecraft-2-micro-service-2-argocd.diagility.com
+    paths:
+    - /
+serviceAccount:
+  create: false
